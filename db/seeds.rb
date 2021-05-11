@@ -1,6 +1,6 @@
 Airplane.destroy_all
-a1 = Airplane.create :name => 'VG100', :row => 3, :column => 31, :brand => "Virgin Airlines"
-a2 = Airplane.create :name => 'QA100', :row => 2, :column => 29, :brand => "Qantas Airlines"
+a1 = Airplane.create :name => 'VG100', :row => 31, :column => 8
+a2 = Airplane.create :name => 'QA100', :row => 29, :column => 4
 
 puts "#{ Airplane.count } airplanes"
 
