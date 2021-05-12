@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "static#home"
   resources :users
   resources :flights
   resources :airplanes
