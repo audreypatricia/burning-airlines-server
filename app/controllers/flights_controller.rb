@@ -37,6 +37,8 @@ class FlightsController < ApplicationController
   # PATCH/PUT /flights/1 or /flights/1.json
   def update
     respond_to do |format|
+      @flight.update :seat_selection => params[:seat_selection]
+        puts params[:seat_selection] + "!?                                              "
       if @flight.update(flight_params)
         format.html { redirect_to @flight, notice: "Flight was successfully updated." }
         format.json { render :show, status: :ok, location: @flight }
