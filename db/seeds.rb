@@ -17,9 +17,9 @@ f6 = Flight.create :date => "28/05/2021", :flight_to => "HBA", :flight_from => "
 puts "#{ Flight.count } flights"
 
 User.destroy_all
-u1 = User.create :name => 'SmartNelly'
-u2 = User.create :name => 'Priyanka-1412'
-u3 = User.create :name => 'AudreyPat'
+u1 = User.create :name => 'SmartNelly', :username =>'SmartNelly', :password => 'chicken'
+u2 = User.create :name => 'Priyanka-1412', :username =>'Priyanka-1412', :password => 'chicken'
+u3 = User.create :name => 'AudreyPat', :username => 'AudreyPat', :password => 'chicken'
 
 puts "#{ User.count } users"
 
